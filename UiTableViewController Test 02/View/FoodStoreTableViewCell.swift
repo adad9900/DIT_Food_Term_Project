@@ -13,7 +13,7 @@ class FoodStoreTableViewCell: UITableViewCell {
     @IBOutlet weak var foodStoreCellImage: UIImageView! {
 
         didSet {
-                foodStoreCellImage.layer.cornerRadius = 15.0
+                foodStoreCellImage.layer.cornerRadius = 36.5
                 foodStoreCellImage.clipsToBounds = true
         }
     }

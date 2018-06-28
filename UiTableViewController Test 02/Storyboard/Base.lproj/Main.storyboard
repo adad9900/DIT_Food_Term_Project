@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -200,7 +201,16 @@
                         <viewLayoutGuide key="safeArea" id="2i8-vt-lhr"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="nK9-W4-yUK"/>
+                    <navigationItem key="navigationItem" id="nK9-W4-yUK">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="action" id="BL7-c9-94b">
+                                <connections>
+                                    <action selector="share:" destination="8gs-5R-ZIH" id="fHL-Gi-lLK"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="add" id="XZY-Ve-eWE"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="cellImageView" destination="9YQ-Gp-nb7" id="gcz-ID-ghm"/>
@@ -208,6 +218,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lTd-kS-vSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="8gs-5R-ZIH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1980" y="-61"/>
         </scene>
