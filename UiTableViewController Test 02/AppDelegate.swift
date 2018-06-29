@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        // 인트로 화면을 사용하기위해 쓰레드로 메인뷰 오픈시간을 지연시키는 코드
-        Thread.sleep(forTimeInterval: 2.0)
+//        // 인트로 화면을 사용하기위해 쓰레드로 메인뷰 오픈시간을 지연시키는 코드
+//        Thread.sleep(forTimeInterval: 2.0)
         return true
     }
 
