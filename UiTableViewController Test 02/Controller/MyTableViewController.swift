@@ -47,6 +47,7 @@ class MyTableViewController: UITableViewController {
         
     }
     
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RE", for: indexPath)
             as! FoodStoreTableViewCell
@@ -64,10 +65,20 @@ class MyTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
         
-        
         let optionMenu = UIAlertController(title : nil, message : "무엇을 하시겠어요?", preferredStyle : .actionSheet)
         
         let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler: nil)
+        
+        let share = UIAlertAction (title: "공유", style: .default) {
+            (action: UIAlertAction) -> Void in
+            
+            let image = UIImage(named: "image")
+            let activity = UIActivityViewController(activityItems:  [image as Any], applicationActivities: nil)
+            self.present(activity, animated: true, completion: nil)
+            
+        }
+        
+        
         
         let callAction = UIAlertAction(title: "전화걸기", style: .default) {
             (action: UIAlertAction) -> Void in
@@ -87,9 +98,11 @@ class MyTableViewController: UITableViewController {
             cell?.accessoryType = .checkmark
         }
         
+        
         optionMenu.addAction(cancelAction)
         optionMenu.addAction(callAction)
         optionMenu.addAction(checkinAction)
+        optionMenu.addAction(share)
         
         present(optionMenu, animated: true)
     }

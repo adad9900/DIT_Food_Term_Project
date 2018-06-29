@@ -26,9 +26,9 @@
 		0572C91720C2B39400B79406 /* TotalMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalMapViewController.swift; sourceTree = "<group>"; };
 		058F274620BEE6CC00271381 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		058F274920BEE70300271381 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2404009020E5D2D000444D17 /* UiTableViewController Test 02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "UiTableViewController Test 02.app"; path = "/Users/d7703_14/Documents/DIT_Food_Term_Project/build/Debug-iphoneos/UiTableViewController Test 02.app"; sourceTree = "<absolute>"; };
 		641A0F0420BBDA36004ECC5A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		648FAC0420B29D5B00ACCE56 /* FoodStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStoreTableViewCell.swift; sourceTree = "<group>"; };
-		741C17E120AC061400FE6E1E /* UiTableViewController Test 02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "UiTableViewController Test 02.app"; path = "/Users/king/Documents/DIT_Food_Term_Project/build/Debug-iphoneos/UiTableViewController Test 02.app"; sourceTree = "<absolute>"; };
 		741C17E420AC061400FE6E1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		741C17E920AC061400FE6E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		741C17EB20AC061400FE6E1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 			);
 			name = "UiTableViewController Test 02";
 			productName = "UiTableViewController Test 02";
-			productReference = 741C17E120AC061400FE6E1E /* UiTableViewController Test 02.app */;
+			productReference = 2404009020E5D2D000444D17 /* UiTableViewController Test 02.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
