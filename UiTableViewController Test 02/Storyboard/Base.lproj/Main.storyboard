@@ -16,7 +16,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lJF-Ab-udf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="CdN-V3-I7l">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -33,13 +33,23 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Rpk-46-lzC">
                                             <rect key="frame" x="12" y="2" width="361" height="75.5"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uLF-IA-CGa">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6lj-DF-tQc">
                                                     <rect key="frame" x="0.0" y="0.0" width="75.5" height="75.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="75.5" id="YNl-Tx-vgj"/>
-                                                        <constraint firstAttribute="width" constant="75.5" id="wV5-aa-sbq"/>
-                                                    </constraints>
-                                                </imageView>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3e9-BT-2hm">
+                                                            <rect key="frame" x="0.0" y="0.0" width="75.5" height="75.5"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uLF-IA-CGa">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="75.5" height="75.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="75.5" id="YNl-Tx-vgj"/>
+                                                                        <constraint firstAttribute="width" constant="75.5" id="wV5-aa-sbq"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="81x-k2-1jo">
                                                     <rect key="frame" x="90.5" y="0.0" width="270.5" height="75.5"/>
                                                     <subviews>
@@ -66,6 +76,7 @@
                                             </subviews>
                                         </stackView>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="Rpk-46-lzC" secondAttribute="bottom" constant="2" id="1ra-tw-JR4"/>
                                         <constraint firstItem="Rpk-46-lzC" firstAttribute="leading" secondItem="zv7-Jj-cQO" secondAttribute="leading" constant="12" id="Mfn-53-prD"/>
